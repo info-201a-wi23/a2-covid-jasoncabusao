@@ -16,13 +16,17 @@ You should start this assignment by opening up the `analysis.R` script. The scri
 Before actually calculating the total number of COVID cases and deaths, record your guesses for the following questions.
 
 Guess: How many total COVID cases do you think there have been in the U.S.?
+* I think there have been around 90-100 million COVID cases in the U.S.
 
 Guess: How many total COVID-related deaths do you think there have been in the U.S.?
+* I think there have been 10 million COVID deaths in the U.S.
 
 Guess: Which state do you think has the highest number of COVID cases, and which state do you think has the lowest?
+* I think New York or California has the highest number of COVID cases. I think states with a lower population may have the lowest number of COVID cases, like Alaska.
 
 ## Reflection 2
 Did the number of COVID cases and deaths surprise you? Why or why not? What about the states with the highest and lowest number of cases? How did your guesses line up with the actual results? Answer in at least 1-3 sentences
+* No, the total number of COVID cases didn't surprise me. The total number of U.S. cases, about 102 milion, was around my prediction of 90-100 million. However, the total number of deaths, about 1 million, did surprise me; it was way less than my prediction of 10 million. My prediction of California having the most COVID cases was correct, whereas, my prediction of Alaska being the state with the lowest cases was wrong. The American Somoa has the lowest recent number of COVID cases
 
 ## Reflection 3
 Which county has the highest number of cases in the state of Washington, and does it surprise you? Why or why not? (You may need to google this county to learn about it) Answer at least in 1-3 sentences
