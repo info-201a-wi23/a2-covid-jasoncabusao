@@ -42,7 +42,7 @@ What do you think about the number and scale of the inconsistencies in the data?
 
 ## Reflection 6
 Why were you interested in this particular question? Were you able to answer your question with code? What did you learn? Answer in at least 1-3 sentences
-* I was interested in this question because we determined what state had the highest death to cases ratio but not the lowest death to cases ratio. It helps determine which U.S. state successfully protected their citizens. Additionally, it helps us understand the lethality of COVID and how it affected certain states. I was able to answer my question with code. The Northern Mariana Islands had the lowest death to cases ratio out of all states listed, with a ratio of 0.003060844.
+* I was interested in this question because we determined what state had the highest death to cases ratio but not the lowest death to cases ratio. It helps determine which U.S. state successfully protected their citizens. Additionally, it helps us understand the lethality of COVID and how it affected certain states. It shows us the likelihood of surviving COVID in certain states. I was able to answer my question with code. The Northern Mariana Islands had the lowest death to cases ratio out of all states listed, with a ratio of 0.003060844.
 
 ## Reflection 7
 What, if anything, made you curious about this COVID analysis? What, if anything, surprised you? What might you do the same or differently on your next data wrangling project? Answer in at least 1-3 sentences
