@@ -49,13 +49,12 @@ num_features_counties <- ncol(counties)
 
 # 2.a How many total COVID cases have there been in the U.S. by the most recent date in the dataset? Make sure to pull() this number `total_us_cases`
 total_us_cases <- national %>% 
-  filter(cases == max(cases, na.rm = TRUE)) %>% 
+  filter(date == max(date, na.rm = TRUE)) %>% 
   pull(cases)
-
 
 # 2.b How many total COVID-related deaths have there been in the U.S. by the most recent date in the dataset? Make sure to pull() this number `total_us_deaths`
 total_us_deaths <- national %>% 
-  filter(deaths == max(deaths, na.rm = TRUE)) %>% 
+  filter(date == max(date, na.rm = TRUE)) %>% 
   pull(deaths)
 
 # 2.c Which state has had the highest number of COVID cases? Make sure to pull() this value `state_highest_cases`
@@ -138,7 +137,7 @@ date_most_deaths <- national %>%
 # 2.o How many people died on the date when the most deaths occurred? Make sure to pull() this value `most_deaths`
 most_deaths <- national %>%
   filter(new_deaths == max(new_deaths, na.rm = TRUE)) %>%
-  pull(deaths)
+  pull(new_deaths)
 
 # You can plot this data with built-in plot functions
 plot(national$new_cases)
@@ -206,7 +205,7 @@ num_national_county_diff <-  nrow(national_county_diff)
 
 # QUESTION:  Write your question in English language words here
   
-"Which State had the highest recent death to cases ratio?"
+"Which State has the lowest death to cases ratio, as of the most recent date?"
 
 #  Write code (at least 2-3 lines) that will answer your question
 
