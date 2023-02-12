@@ -42,7 +42,8 @@ What do you think about the number and scale of the inconsistencies in the data?
 
 ## Reflection 6
 Why were you interested in this particular question? Were you able to answer your question with code? What did you learn? Answer in at least 1-3 sentences
+* I was interested in this question because we determined what state had the highest death to cases ratio but not the lowest death to cases ratio. I was able to answer my quesiton with code. The Northern Mariana Islands had the lowest death to cases ratio out of all states listed, with a ratio of 0.003060844.
 
 ## Reflection 7
 What, if anything, made you curious about this COVID analysis? What, if anything, surprised you? What might you do the same or differently on your next data wrangling project? Answer in at least 1-3 sentences
-* 
+* Something that made me curious about this COVID analysis is why the data for counties stopped on 5-13-2022. Something that surprised me was the state with the highest death to cases ratio was Pennsylvania. Something I might do differently for my next data wrangling project is start early on it and work on a piece of of it everyday until I finish.

@@ -206,10 +206,14 @@ num_national_county_diff <-  nrow(national_county_diff)
 
 # QUESTION:  Write your question in English language words here
   
-"Which State had the highest new cases in a day?"
+"Which State had the highest recent death to cases ratio?"
 
 #  Write code (at least 2-3 lines) that will answer your question
 
+state_lowest_ratio <- states %>%
+  filter(date == max(date)) %>% 
+  filter(death_cases_ratio == min(death_cases_ratio, na.rm = TRUE)) %>% 
+  pull(state)
   
 # Reflection 6 (answer in README.md file)
 # Why were you interested in this particular question? Were you able to answer your question with code? What did you learn?
