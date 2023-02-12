@@ -30,17 +30,19 @@ Did the number of COVID cases and deaths surprise you? Why or why not? What abou
 
 ## Reflection 3
 Which county has the highest number of cases in the state of Washington, and does it surprise you? Why or why not? (You may need to google this county to learn about it) Answer at least in 1-3 sentences
+* The county with the highest number of cases in Washington is King County. This doesn't surprise me since Seattle resides in King County, and Seattle is the most populous city in Washington.
 
 ## Reflection 4
 Why are there so many observations (counties) in the variable `lowest_deaths_in_each_state`? That is, wouldn't you expect the number to be around 50? Why is the number greater than 50? Answer in at least 1-3 sentences
-
+* The reason for the multitude of counties with the lowest deaths in each state is because many counties had the same number of deaths. Because not many folks died from covid compared to the number of cases, there won't be much variability between the number of deaths between counties.  
 
 ## Reflection 5
 What do you think about the number and scale of the inconsistencies in the data? Does the fact that there are inconsistencies mean that people should not use this data? Why or why not? Answer in at least 1-3 sentences
-
+* I think the number of inconsistencies between county and national data is rather small in comparison to the overall number observed – 27 out of 844 days, 97% accuracy. With the huge task of collecting new data everyday and having every single one of it be accurate is hard and too much to ask for. I think people should still use this because the data is still relatively accurate and a slight miscalculation of a few hundred cases won't skew your perception of around 100 million cases. 
 
 ## Reflection 6
 Why were you interested in this particular question? Were you able to answer your question with code? What did you learn? Answer in at least 1-3 sentences
 
 ## Reflection 7
 What, if anything, made you curious about this COVID analysis? What, if anything, surprised you? What might you do the same or differently on your next data wrangling project? Answer in at least 1-3 sentences
+* 

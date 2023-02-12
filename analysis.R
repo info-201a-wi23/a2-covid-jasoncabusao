@@ -150,6 +150,10 @@ plot(national$new_deaths)
 
 # 3.a For each state, what is the county with the highest number of COVID cases? Make a dataframe that has every state and the county with the highest number of cases and corresponding rows (hint: you will need to use a grouping operation and a filter)
 # Save as `highest_cases_in_each_state`
+highest_cases_in_each_state <- counties %>%
+  group_by(state) %>%
+  filter(date == max(date)) %>%
+  filter(cases == max(cases, na.rm = TRUE))
 
 # Reflection 3 (answer in README.md file)
 # Inspect the `highest_cases_in_each_state` dataframe
@@ -158,6 +162,10 @@ plot(national$new_deaths)
 # 3.b For each state, what is the county with the lowest number of COVID-related deaths (not cases this time)?
 # Make a dataframe that has every state and the county with lowest number of deaths and corresponding rows (hint: you will need to use a grouping operation and a filter)
 # Save as `lowest_deaths_in_each_state`
+lowest_deaths_in_each_state <- counties %>%
+  group_by(state) %>%
+  filter(date == max(date)) %>%
+  filter(deaths == min(deaths, na.rm = TRUE))
 
 # Reflection 4 (answer in README.md file)
 # Why are there so many counties in `lowest_deaths_in_each_state`? That is, wouldn't you expect the number to be around 50? Why is the number greater than 50?
@@ -171,19 +179,22 @@ plot(national$new_deaths)
 
 # 4.a Create a `total_cases_counties` dataframe that adds up all the COIVD cases for all the counties for every date in the counties dataframe.
 # You should name the columns `date` and `county_total_cases`.
-total_cases_counties <- NULL
+total_cases_counties <- counties %>% 
+  group_by(date) %>% 
+  summarize(county_total_cases = sum(cases))
 
 # 4.b Join `total_cases_counties` with the `national` dataframe.
 # Save this dataframe as `all_totals`.
-all_totals <- NULL
+all_totals <- left_join(total_cases_counties, national, by = "date")
 
 # 4.c Filter the all_totals dataframe to find only the rows where the "county_total_cases" column does not match the "cases" column
 # Save as national_county_diff
-national_county_diff <- NULL
+national_county_diff <- all_totals %>% 
+  filter(county_total_cases != cases)
 
 # 4.d Calculate the number of rows in the national_county_diff dataframe
 # Save as num_national_county_diff
-num_national_county_diff <- NULL
+num_national_county_diff <-  nrow(national_county_diff)
 
 # Reflection 5 (answer in README.md file)
 # What do you think about the number and scale of the inconsistencies in the data? Does the fact that there are inconsistencies mean that people should not use this data? Why or why not?
@@ -194,12 +205,12 @@ num_national_county_diff <- NULL
 # 5.a Now it's your turn to ask your own question! Come up with a new question about this COVID data, and then write code to answer it (at least 2-3 lines)
 
 # QUESTION:  Write your question in English language words here
-#
-#
+  
+"Which State had the highest new cases in a day?"
 
 #  Write code (at least 2-3 lines) that will answer your question
-my_answer <- NULL
 
+  
 # Reflection 6 (answer in README.md file)
 # Why were you interested in this particular question? Were you able to answer your question with code? What did you learn?
 
